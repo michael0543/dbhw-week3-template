@@ -6,7 +6,7 @@ function Node(data) {
 function SinglyLinkedList() {
   this.head = null;
   this.tail = null;
-  this.numberOfValues = 0;
+  this.numberOfValues =  0;
 }
 
 SinglyLinkedList.prototype.add = function(data) {
@@ -14,11 +14,9 @@ SinglyLinkedList.prototype.add = function(data) {
   if(!this.head) {
     this.head = node;
     this.tail = node;
-    //TODO
   } else {
     this.tail.next = node;
     this.tail = node;
-    //TODO
   }
   this.numberOfValues++;
 
@@ -42,7 +40,6 @@ SinglyLinkedList.prototype.remove = function(data) {
     }
     current = current.next;
   }
-  //TODO
 };
 
 SinglyLinkedList.prototype.insertAfter = function(data, toNodeData) {
@@ -61,12 +58,10 @@ SinglyLinkedList.prototype.insertAfter = function(data, toNodeData) {
     }
     current = current.next;
   }
-  //TODO
 };
 
 SinglyLinkedList.prototype.length = function() {
   return this.numberOfValues;
-  //TODO
 };
 
 SinglyLinkedList.prototype.print = function() {
@@ -77,7 +72,7 @@ SinglyLinkedList.prototype.print = function() {
     current = current.next;
   }
   return string.trim();
-  //TODO
+  
 };
 
 
